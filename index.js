@@ -61,7 +61,7 @@ const burger = {
     if (type === "teacher" || type === "student") {
       return this.price * 0.75;
     } else {
-      return this.price * 0.90;
+      return this.price * 0.9;
     }
   },
   // creating a method called discount - and it takes a parameter of customer and it gives a discount based on the argument passed
@@ -102,6 +102,8 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
+
+console.log(reviews[5].feedback);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Reyna's feedback is missing! Use what you know to do the following: (no function needed) 
