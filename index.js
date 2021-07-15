@@ -57,9 +57,17 @@ const burger = {
   name: "Burger",
   price: 18,
   category: "Lunch",
+  discount: function (type) {
+    if (type === "teacher" || type === "student") {
+      return this.price * 0.75;
+    } else {
+      return this.price * 0.90;
+    }
+  },
   // creating a method called discount - and it takes a parameter of customer and it gives a discount based on the argument passed
   // student or teacher the discount should be 25% off the price - hint you will need to
 };
+console.log(burger.discount("student"));
 
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
