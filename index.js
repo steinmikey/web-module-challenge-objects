@@ -177,9 +177,18 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
-function getReviewByRating(/* code here */) {
+function getReviewByRating(array, selectedRating) {
   /* code here */
+  const reviewsInRange = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].rating < selectedRating + 1 && array[i].rating >= selectedRating) {
+      reviewsInRange.push(array[i]);
+    }
+  }
+  return reviewsInRange;
 }
+
+console.log("stretch 1", getReviewByRating(reviews, 4));
 
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪💪   
 Use the getLongReviews function below to do the following:
@@ -194,7 +203,7 @@ Use the getLongReviews function below to do the following:
   ]
 */
 
-function getLongReviews(/* code here */) {
+function getLongReviews(array) {
   /* code here */
 }
 
